@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html class="mdc-typography" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hello NZ - South Island</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/material-components-web.min.css">
+    <link rel="stylesheet" href="css/hellonz.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+        :root {
+            --mdc-theme-primary: #42a5f5;
+            --mdc-theme-secondary: #9ccc65;
+            --mdc-theme-background: #fafafa;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="mdc-toolbar mdc-toolbar--fixed">
+        <div class="mdc-toolbar__row mdc-z-index-fix">
+            <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                <img alt="logo" class="logo" src="img/logo.png">
+                <span class="mdc-toolbar__title">Hello NZ</span>
+            </div>
+            <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                <div class="mdc-menu-anchor">
+                    <div class="toggle pointer mdc-ripple-surface" data-mdc-auto-init="MDCRipple">
+                        <i class="material-icons mdc-toolbar__menu-icon ">more_vert</i>
+                    </div>
+
+                    <div class="mdc-simple-menu mdc-simple-menu--open-from-top-right" tabindex="-1" id="guide-menu">
+                        <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+                            <li class="mdc-list-item" role="menuitem" tabindex="0">Guide</li>
+                            <li class="mdc-list-item" role="menuitem" tabindex="0">指南</li>
+                            <li class="mdc-list-divider" role="separator"></li>
+                            <li class="mdc-list-item" role="menuitem" tabindex="0">About</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdc-toolbar__row">
+            <div class="mdc-toolbar__section" role="toolbar">
+                <nav id="sub-nav" class="mdc-tab-bar mdc-tab-bar--indicator-accent mdc-tab-bar-upgraded">
+                    <a class="mdc-tab mdc-ripple-surface" href="ni.html" data-mdc-auto-init="MDCRipple">North Island</a>
+                    <a class="mdc-tab mdc-ripple-surface mdc-tab--active" href="si.html" data-mdc-auto-init="MDCRipple">South Island</a>
+                    <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(0.333333, 1); visibility: visible;"></span>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mdc-toolbar-fixed-adjust">
+            <div class="mdc-layout-grid container">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                        <h1 class="mdc-typography--headline">South Island</h1>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid container animated fadeInUp fast-animation">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary card-padding-adjust">
+                                <div class="mdc-toolbar__row">
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                                        <h1 class="mdc-card__title">Kaikoura Peninsula Walkway</h1>
+                                    </div>
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                                        <a href="https://raw.githubusercontent.com/samstride/hellonz/master/img/si/pt_kean_1.jpg" download class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Download">file_download</a>
+                                        <a href="https://goo.gl/maps/f5Vdwf7Q3zL2" target="_blank" class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Map link">place</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-card__media cover-pt-kean"></div>
+                            <div class="mdc-card__supporting-text">
+                                <ul class="mdc-list">
+                                    <li class="mdc-list-item">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary card-padding-adjust">
+                                <div class="mdc-toolbar__row">
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                                        <h1 class="mdc-card__title">Church of the Good Shepherd</h1>
+                                    </div>
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                                        <a href="https://raw.githubusercontent.com/samstride/hellonz/master/img/si/tekapo_1.jpg" download class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Download">file_download</a>
+                                        <a href="https://goo.gl/maps/7rhi7XaZzcr" target="_blank" class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Map link">place</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-card__media cover-tekapo"></div>
+                            <div class="mdc-card__supporting-text">
+                                <ul class="mdc-list">
+                                    <li class="mdc-list-item">
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wifi_tethering</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wc</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">local_drink</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">restaurant</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">accessible</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary card-padding-adjust">
+                                <div class="mdc-toolbar__row">
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                                        <h1 class="mdc-card__title">Blue Lakes</h1>
+                                    </div>
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                                        <a href="https://raw.githubusercontent.com/samstride/hellonz/master/img/si/blue_lakes_1.jpg" download class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Download">file_download</a>
+                                        <a href="https://goo.gl/maps/NMwsq4TNewu" target="_blank" class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Map link">place</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-card__media cover-blue-lakes"></div>
+                            <div class="mdc-card__supporting-text">
+                                <ul class="mdc-list">
+                                    <li class="mdc-list-item">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary card-padding-adjust">
+                                <div class="mdc-toolbar__row">
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                                        <h1 class="mdc-card__title">Kea Point</h1>
+                                    </div>
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                                        <a href="https://raw.githubusercontent.com/samstride/hellonz/master/img/si/kea_point_1.jpg" download class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Download">file_download</a>
+                                        <a href="https://goo.gl/maps/TyRkwoHV7A92" target="_blank" class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Map link">place</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-card__media cover-kea-point"></div>
+                            <div class="mdc-card__supporting-text">
+                                <ul class="mdc-list">
+                                    <li class="mdc-list-item">
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wc</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">local_drink</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary card-padding-adjust">
+                                <div class="mdc-toolbar__row">
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                                        <h1 class="mdc-card__title">Moeraki Boulders</h1>
+                                    </div>
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                                        <a href="https://raw.githubusercontent.com/samstride/hellonz/master/img/si/moeraki_1.jpg" download class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Download">file_download</a>
+                                        <a href="https://goo.gl/maps/aG6pLprL8NE2" target="_blank" class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Map link">place</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-card__media cover-moeraki"></div>
+                            <div class="mdc-card__supporting-text">
+                                <ul class="mdc-list">
+                                    <li class="mdc-list-item">
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wifi_tethering</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wc</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">local_drink</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">restaurant</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary card-padding-adjust">
+                                <div class="mdc-toolbar__row">
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                                        <h1 class="mdc-card__title">World's Steepest Street</h1>
+                                    </div>
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                                        <a href="https://raw.githubusercontent.com/samstride/hellonz/master/img/si/baldwin_street_1.jpg" download class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Download">file_download</a>
+                                        <a href="https://goo.gl/maps/poaZbgCiCPJ2" target="_blank" class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Map link">place</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-card__media cover-baldwin-street"></div>
+                            <div class="mdc-card__supporting-text">
+                                <ul class="mdc-list">
+                                    <li class="mdc-list-item">
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wifi_tethering</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wc</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">local_drink</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">restaurant</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary card-padding-adjust">
+                                <div class="mdc-toolbar__row">
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                                        <h1 class="mdc-card__title">Nugget Point</h1>
+                                    </div>
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                                        <a href="https://raw.githubusercontent.com/samstride/hellonz/master/img/si/nugget_point_1.jpg" download class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Download">file_download</a>
+                                        <a href="https://goo.gl/maps/XEdGheH6QoE2" target="_blank" class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Map link">place</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-card__media cover-nugget-point"></div>
+                            <div class="mdc-card__supporting-text">
+                                <ul class="mdc-list">
+                                    <li class="mdc-list-item">
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wc</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary card-padding-adjust">
+                                <div class="mdc-toolbar__row">
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                                        <h1 class="mdc-card__title">Purakaunui Falls</h1>
+                                    </div>
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                                        <a href="https://raw.githubusercontent.com/samstride/hellonz/master/img/si/purakaunui_falls_1.jpg" download class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Download">file_download</a>
+                                        <a href="https://goo.gl/maps/xaTj8Tcy9hp" target="_blank" class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Map link">place</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-card__media cover-purakaunui-falls"></div>
+                            <div class="mdc-card__supporting-text">
+                                <ul class="mdc-list">
+                                    <li class="mdc-list-item">
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wc</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary card-padding-adjust">
+                                <div class="mdc-toolbar__row">
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                                        <h1 class="mdc-card__title">Lake Wanaka</h1>
+                                    </div>
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                                        <a href="https://raw.githubusercontent.com/samstride/hellonz/master/img/si/wanaka_1.jpg" download class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Download">file_download</a>
+                                        <a href="https://goo.gl/maps/UeADcFjiy8M2" target="_blank" class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Map link">place</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-card__media cover-wanaka"></div>
+                            <div class="mdc-card__supporting-text">
+                                <ul class="mdc-list">
+                                    <li class="mdc-list-item">
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wifi_tethering</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wc</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">local_drink</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">restaurant</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary card-padding-adjust">
+                                <div class="mdc-toolbar__row">
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                                        <h1 class="mdc-card__title">Roys Peak</h1>
+                                    </div>
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                                        <a href="https://raw.githubusercontent.com/samstride/hellonz/master/img/si/roys_peak_1.jpg" download class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Download">file_download</a>
+                                        <a href="https://goo.gl/maps/15jM6wBFeno" target="_blank" class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Map link">place</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-card__media cover-roys-peak"></div>
+                            <div class="mdc-card__supporting-text">
+                                <ul class="mdc-list">
+                                    <li class="mdc-list-item">
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">terrain</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary card-padding-adjust">
+                                <div class="mdc-toolbar__row">
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                                        <h1 class="mdc-card__title">Lake Matheson</h1>
+                                    </div>
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                                        <a href="https://raw.githubusercontent.com/samstride/hellonz/master/img/si/lake_matheson_1.jpg" download class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Download">file_download</a>
+                                        <a href="https://goo.gl/maps/4hTZ8grirAR2" target="_blank" class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Map link">place</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-card__media cover-lake-matheson"></div>
+                            <div class="mdc-card__supporting-text">
+                                <ul class="mdc-list">
+                                    <li class="mdc-list-item">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary card-padding-adjust">
+                                <div class="mdc-toolbar__row">
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                                        <h1 class="mdc-card__title">Punakaiki Pancake Rocks</h1>
+                                    </div>
+                                    <div class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit" role="toolbar">
+                                        <a href="https://raw.githubusercontent.com/samstride/hellonz/master/img/si/punakaiki_1.jpg" download class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Download">file_download</a>
+                                        <a href="https://goo.gl/maps/7CRq25Pth5r" target="_blank" class="material-icons mdc-toolbar__icon mdc-theme--secondary" aria-label="Map link">place</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-card__media cover-punakaiki"></div>
+                            <div class="mdc-card__supporting-text">
+                                <ul class="mdc-list">
+                                    <li class="mdc-list-item">
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wifi_tethering</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">wc</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">local_drink</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">restaurant</i>
+                                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">accessible</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/material-components-web.min.js"></script>
+    <script>
+        window.mdc.autoInit();
+        window.subNav = new mdc.tabs.MDCTabBar(document.querySelector('#sub-nav'));
+
+        var menuEl = document.querySelector('#guide-menu');
+        var menu = new mdc.menu.MDCSimpleMenu(menuEl);
+        var toggle = document.querySelector('.toggle');
+        toggle.addEventListener('click', function() {
+            menu.open = !menu.open;
+        });
+
+        menuEl.addEventListener('MDCSimpleMenu:selected', function(evt) {
+            var detail = evt.detail;
+            if (detail.index === 0) {
+                window.location.href = 'guide.html';
+            }
+            if (detail.index === 1) {
+                window.location.href = 'guide-cn.html';
+            }
+            if (detail.index === 2) {
+                window.location.href = 'about.html';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

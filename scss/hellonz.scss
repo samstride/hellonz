@@ -1,0 +1,100 @@
+@import "nicovers";
+@import "sicovers";
+@import "font";
+@import "roberto";
+@import "mdc_fixes";
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media(max-width: 768px) {
+    .hide-sm {
+        display: none;
+    }
+}
+
+.logo {
+    margin-left: 28px;
+    width: 44px;
+    height: 56px;
+}
+
+.align-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+}
+
+.align-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.btn-margin-adjust {
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+a {
+    color: #9ccc65;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.underline {
+    width: 100px;
+    height: 2px;
+    border-radius: 1px;
+    background: currentColor;
+    color: #9ccc65;
+    margin-top: 12px;
+}
+
+.card-with--avatar .mdc-card__title--large {
+    margin-left: 56px;
+}
+
+.avatar {
+    img {
+        width: 50px;
+        height: 50px;
+    }
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.card-padding-adjust {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.container {
+    max-width: 1280px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.mdc-fab {
+    margin: 8px;
+}
+
+.mdc-toolbar-fixed-adjust {
+    margin-top: 108px;
+}
+
+.fast-animation {
+    -webkit-animation-duration: .5s !important;
+    animation-duration: .5s !important;
+}
