@@ -1,49 +1,75 @@
-@import "nicovers";
-@import "sicovers";
 @import "font";
+@import "root";
 @import "roberto";
-@import "mdc_fixes";
-body {
-    font-family: 'Roboto', sans-serif;
+@import "align";
+
+html {
+    height: 100%;
 }
 
-@media(max-width: 768px) {
-    .hide-sm {
-        display: none;
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding-top: 30px;
+}
+
+.mdc-top-app-bar--fixed-adjust {
+    padding-top: 158px;
+}
+
+.mdc-tab-indicator .mdc-tab-indicator__content--underline {
+    border-color: var(--mdc-theme-secondary);
+}
+
+.mdc-tab .mdc-tab__text-label,
+.mdc-tab--active .mdc-tab__text-label {
+    color: #fff;
+}
+
+.mdc-menu {
+    a.mdc-list-item__text {
+        color: var(--text-color);
     }
+}
+
+.mdc-list-item__graphic {
+    color: var(--text-color);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.image-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.round-corners {
+    border-radius: 8px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .logo {
     margin-left: 28px;
     width: 44px;
     height: 56px;
-}
-
-.align-start {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-ordinal-group: 0;
-    -ms-flex-order: -1;
-    order: -1;
-}
-
-.align-end {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-}
-
-.btn-margin-adjust {
-    margin-left: 8px;
-    margin-bottom: 8px;
-}
-
-a {
-    color: #9ccc65;
 }
 
 .pointer {
@@ -59,42 +85,20 @@ a {
     margin-top: 12px;
 }
 
-.card-with--avatar .mdc-card__title--large {
-    margin-left: 56px;
-}
-
-.avatar {
-    img {
-        width: 50px;
-        height: 50px;
-    }
-    position: absolute;
-    height: 2.5rem;
-    width: 2.5rem;
-}
-
-.card-padding-adjust {
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
 .container {
     max-width: 1280px;
 }
 
-.full-width {
-    width: 100%;
-}
 
 .mdc-fab {
     margin: 8px;
 }
 
-.mdc-toolbar-fixed-adjust {
-    margin-top: 108px;
-}
-
 .fast-animation {
     -webkit-animation-duration: .5s !important;
     animation-duration: .5s !important;
+}
+
+.full-width {
+    width: 100%;
 }
